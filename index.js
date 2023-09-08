@@ -11,12 +11,6 @@ date_display.innerHTML = `Date: ${currentDate}`
 
 
 // code for time
-function updateTime() {
-    const date = new Date()
-    let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
-    const date_time = document.querySelector('[data-testid="currentUTCTime"]')
-    date_time.innerHTML = `Time: ${time}`
-}
-updateTime()
-setInterval(updateTime,1000)
-
+const time = Date.now()
+const date_time = document.querySelector('[data-testid="currentUTCTime"]')
+date_time.innerHTML = time 
