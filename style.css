@@ -20,7 +20,7 @@ a {
 
 .container {
     background-color: rgb(241, 251, 251);
-    max-width: 50px;
+    max-width: 50%;
     height: 400px;
     margin: 10% auto;
     border-radius: 5%
